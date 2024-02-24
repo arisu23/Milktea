@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boba Tea!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="milk.jpg">
+</head>
+
+<body>
+    <div class="login-wrapper">
+            <form  class="form" onsubmit="validateForm(); return false;">
+                <img src="milk.jpg" alt="avatar">
+                <h2>Login</h2>
+                <div class="input-group">
+                    <input type="text" id="username" required>
+                    <label for="username">Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <input type="submit" value="Login" class="submit-button">
+                <a href="#" class="forgot">Forgot Password ?</a>
+            </form>
+            <script src="function.js"></script>
+    </div>
+</body>
+
+</html>

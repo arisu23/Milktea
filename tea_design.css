@@ -1,0 +1,153 @@
+:root {
+  --text-01: #45413E;
+  --light-01: #F9F9F9;
+  --light-02: #FFFFFF;
+  --brand-01: #DB7F67;
+  --brand-02: #F4CFC6;
+  --card-hover: 0px 4px 24px rgba(0, 0, 0, 0.15);
+  --card-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  --hover-timing: all 0.2s ease;
+  --nav-card-size: 240px;
+
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+
+
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background-color: #064000;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 10px 30px rgba(0,0,0,0.3);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  /*background-color: #c4a484;*/
+  background-color:#064000;
+  height: 90px;
+}
+nav ul{
+  display: flex;
+   list-style: none;
+   padding-right: 50px;
+}
+nav ul li a{
+
+  height: 40px;
+  line-height: 43px;
+  margin: 20px;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 550;
+  color: #F5F5DC;
+  letter-spacing: 2px;
+  display: flex;
+  text-align: center;
+  padding-left: 2px
+  
+}
+nav ul li a:hover{
+  border-bottom: 2px solid var(--brand-02);
+}
+.logo{
+  padding-left: 50px;
+  cursor: pointer;
+}
+
+footer{
+  background-color: black;
+  color: white;
+}
+@media only screen and (min-width: 992px) {
+  header {
+    width: calc(33.33% - 20px);
+  }
+}
+  header {
+    /* Header styles */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+
+  button {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 12px 24px;
+    border-radius: 48px;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 8px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+button.btn-outline-dark {
+  color: white;
+  background: none;
+  color: white;
+  border: 2px solid white;
+}
+
+button.btn-filled-dark {
+  color: black;
+  background: white;
+  color: black;
+ border: none;
+}
+
+.btn-outline-dark:hover {
+  background: var(--text-01);
+  border: 2px solid var(--text-01);
+}
+button:hover,
+.btn-outline-dark.btn-hover-color:hover {
+    color: var(--light-01);
+    border: 2px solid var(--brand-01);
+    background: var(--brand-01);
+    transition: var(--hover-timing);
+    box-shadow: var(--card-hover);
+}
+section.hero {
+ width: 100%;
+  height: 100vh;
+  background: #064000 url(chocomt.png) no-repeat center right;
+  background-size: 40vw 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  grid-gap: 48px;
+  display: inline-flex;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 16px;
+}
+
+section.hero h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+  width: 40%;
+
+  color: white;
+}
