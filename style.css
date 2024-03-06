@@ -1,8 +1,9 @@
- *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
+ *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
             
             body{
                 background: url(https://www.shutterstock.com/image-vector/bubble-milk-tea-pearl-different-600nw-2254123551.jpg) no-repeat center;
