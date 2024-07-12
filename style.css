@@ -6,9 +6,10 @@
 }
             
             body{
-                background: url(https://www.shutterstock.com/image-vector/bubble-milk-tea-pearl-different-600nw-2254123551.jpg) no-repeat center;
+                background: url(https://antdisplay.com/pub/media/magefan_blog/1_3_2.png) no-repeat center;
                 background-size: cover;
                 font-family: Arial, Helvetica, sans-serif;
+                backdrop-filter: blur(10px);
             }
             
             .login-wrapper{
@@ -21,11 +22,12 @@
             
             .form{
                 position: relative;
+                margin-left: -12px;
                 width: 100%;
-                max-width: 380px;
+                max-width: 360px;
                 padding: 80px 40px 40px;
                 background: rgba(0,0,0,0.7);
-                border-radius: 10px;
+                border-radius: 45px;
                 color: #FFF;
                 box-shadow: 0px 15px 25px rgba(0,0,0,0.5);
             }
@@ -50,6 +52,7 @@
                 height: 100px;
                 background: rgba(255,255,255,0.8);
                 border-radius: 50%;
+                box-shadow: 0px 10px 10px rgba(0,0,0,0.75);
             }
             
             #forgot{
@@ -107,15 +110,29 @@
                 font-size: 1rem;
                 text-transform: uppercase;
                 letter-spacing: 1px;
-                padding: 10px 20px;
-                border-radius: 5px;
+                padding: 8px 25px;
+                border-radius: 20px;
                 cursor: pointer;
+                color: white;
+                font-weight: bold;
             }
             
             .forgot{
-                color: inherit;
+                color: skyblue;
+                font-weight: bold;
             }    
+
+            .forgot:hover{
+                color:white;
+            }
+
             .submit-button:hover{
               background-color: pink;
               color: black;
+            }
+
+            .form-footer{
+                display: flex;
+                align-items: baseline;
+                margin-top: 30px;
             }

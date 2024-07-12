@@ -60,6 +60,7 @@ nav ul li a{
 }
 nav ul li a:hover{
   border-bottom: 2px solid var(--brand-02);
+  color: var(--brand-02);
 }
 .logo{
   padding-left: 50px;

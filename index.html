@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boba Tea!</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image" href="milk.jpg">
+    <link rel="icon" type="image" href="mtlogo.png">
 </head>
 
 <body>
     <div class="login-wrapper">
             <form  class="form" onsubmit="validateForm(); return false;">
                 <img src="milk.jpg" alt="avatar">
-                <h2>Login</h2>
+                <h2>Welcome</h2>
                 <div class="input-group">
                     <input type="text" id="username" required>
-                    <label for="username">Name</label>
+                    <label for="username">Email/Username</label>
                 </div>
                 <div class="input-group">
                     <input type="password" id="password" required>
                     <label for="password">Password</label>
                 </div>
+                <div class="form-footer">
+                <a href="#" class="forgot"><small>Forgot Password?</small></a>
                 <input type="submit" value="Login" class="submit-button">
-                <a href="#" class="forgot">Forgot Password ?</a>
+                </div>
             </form>
             <script src="function.js"></script>
     </div>
