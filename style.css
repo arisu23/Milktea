@@ -147,7 +147,7 @@
 
     .form {
         padding: 40px 20px; /* Adjust padding inside the form */
-        border-radius: 20px; /* Adjust border-radius for smaller screens */
+        border-radius: 50px; /* Adjust border-radius for smaller screens */
     }
 
     .form img {
