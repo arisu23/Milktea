@@ -12,17 +12,19 @@
                 backdrop-filter: blur(10px);
             }
             
-            .login-wrapper{
-                height: 100vh;
-                width: 100vw;
+            .login-wrapper {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                height: 100vh; /* Allows for flexible height based on content */
+                width: 100%;
+                max-width: 360px; /* Max width for larger screens */
+                padding: 20px; /* Padding for spacing */
+                margin: 0 auto; /* Center horizontally with equal margins */
             }
             
             .form{
                 position: relative;
-                margin-left: -12px;
                 width: 100%;
                 max-width: 360px;
                 padding: 80px 40px 40px;
@@ -136,3 +138,94 @@
                 align-items: baseline;
                 margin-top: 30px;
             }
+
+/* Mobile Portrait (320px to 480px) */
+@media (max-width: 480px) {
+    .login-wrapper {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .form {
+        padding: 40px 20px; /* Adjust padding inside the form */
+        border-radius: 20px; /* Adjust border-radius for smaller screens */
+    }
+
+    .form img {
+        width: 80px;
+        height: 80px;
+        top: -40px;
+    }
+
+    .form h2 {
+        font-size: 1.5rem;
+    }
+
+    .form .input-group input {
+        font-size: 0.9rem;
+    }
+
+    .submit-button {
+        padding: 6px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile Landscape (481px to 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .login-wrapper {
+        width: 80%;
+    }
+
+    .form {
+        padding: 60px 30px; /* Adjust padding inside the form */
+    }
+
+    .form img {
+        width: 90px;
+        height: 90px;
+        top: -45px;
+    }
+
+    .form h2 {
+        font-size: 1.75rem;
+    }
+
+    .form .input-group input {
+        font-size: 0.95rem;
+    }
+
+    .submit-button {
+        padding: 7px 22px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Tablet Portrait (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .login-wrapper {
+        width: 70%;
+    }
+
+    .form {
+        padding: 70px 40px; /* Adjust padding inside the form */
+    }
+
+    .form img {
+        width: 100px;
+        height: 100px;
+        top: -50px;
+    }
+
+    .form h2 {
+        font-size: 1.8rem;
+    }
+
+    .form .input-group input {
+        font-size: 1rem;
+    }
+
+    .submit-button {
+        padding: 8px 25px;
+        font-size: 1rem;
+    }
+}
